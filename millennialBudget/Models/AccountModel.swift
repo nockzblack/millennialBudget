@@ -7,6 +7,10 @@
 
 import Foundation
 
-struct Account {
+struct Account: Identifiable {
+    let id = UUID().uuidString
+    let name: String
+    let iconName: String
+    let openingBalance: Double = 0.0
     
 }

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct Income: Identifiable {
+    
+    let id = UUID().uuidString
+    let account: Account
+    let ammount: Double
+    let description: String
+    let date: Date
+}
