@@ -13,4 +13,8 @@ struct Account: Identifiable {
     let iconName: String
     let openingBalance: Double = 0.0
     
+    init(){
+        name = "myAccount"
+        iconName = "wallet"
+    }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8757C89F283EAC5B00CB4711 /* AccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C89E283EAC5B00CB4711 /* AccountVM.swift */; };
+		8757C8A1283EB2D400CB4711 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C8A0283EB2D400CB4711 /* Accounts.swift */; };
+		8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8757C8A3283EBAB600CB4711 /* SymbolPicker */; };
 		C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */; };
 		C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */; };
 		C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B2283CC6F8001EE8C3 /* AccountModel.swift */; };
@@ -18,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8757C89E283EAC5B00CB4711 /* AccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVM.swift; sourceTree = "<group>"; };
+		8757C8A0283EB2D400CB4711 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
 		C10996B2283CC6F8001EE8C3 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,7 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8757C8A0283EB2D400CB4711 /* Accounts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -61,6 +68,7 @@
 		C10996B7283CCB9B001EE8C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8757C89E283EAC5B00CB4711 /* AccountVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -95,8 +103,8 @@
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
 				C10996B8283CCBB1001EE8C3 /* Controllers */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
-				C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */,
 				C1ADDB2C28105FBC00A16096 /* ContentView.swift */,
+				C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */,
 				C1ADDB2E28105FBE00A16096 /* Assets.xcassets */,
 				C1ADDB3028105FBE00A16096 /* Preview Content */,
 			);
@@ -127,6 +135,9 @@
 			dependencies = (
 			);
 			name = millennialBudget;
+			packageProductDependencies = (
+				8757C8A3283EBAB600CB4711 /* SymbolPicker */,
+			);
 			productName = millennialBudget;
 			productReference = C1ADDB2728105FBC00A16096 /* millennialBudget.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +166,9 @@
 				Base,
 			);
 			mainGroup = C1ADDB1E28105FBB00A16096;
+			packageReferences = (
+				8757C8A2283EBAB600CB4711 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+			);
 			productRefGroup = C1ADDB2828105FBC00A16096 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,11 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */,
+				8757C8A1283EB2D400CB4711 /* Accounts.swift in Sources */,
 				C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */,
 				C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */,
 				C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */,
 				C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */,
 				C1ADDB2B28105FBC00A16096 /* millennialBudgetApp.swift in Sources */,
+				8757C89F283EAC5B00CB4711 /* AccountVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8757C8A2283EBAB600CB4711 /* XCRemoteSwiftPackageReference "SymbolPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xnth97/SymbolPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8757C8A3283EBAB600CB4711 /* SymbolPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8757C8A2283EBAB600CB4711 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
+			productName = SymbolPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1ADDB1F28105FBB00A16096 /* Project object */;
 }
