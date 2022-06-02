@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Income: Identifiable {
+struct Income: Identifiable, Transaction {
     
     let id = UUID().uuidString
     let account: Account

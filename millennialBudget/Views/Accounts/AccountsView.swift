@@ -12,10 +12,9 @@ struct AccountsView: View {
     @ObservedObject var viewModel: AccountsVM
 
     var body: some View {
-        List(viewModel.accounts) { acc in
-            AccountRow(account: acc)
-            
-        }
+            List(viewModel.accounts) { acc in
+                AccountRow(account: acc)
+            }
     }
 }
 
