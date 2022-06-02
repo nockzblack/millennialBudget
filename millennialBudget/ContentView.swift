@@ -9,8 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            Text("Accounts")
+                .font( .system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "creditcard")
+                    Text("Accounts")
+                }
+            
+            Text("Income")
+                .font( .system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "dollarsign.circle")
+                    Text("Accounts")
+                }
+            Text("Expense")
+                .font( .system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "bag.badge.plus")
+                    Text("")
+                }
+        }
+        .accentColor(.blue)
     }
 }
 

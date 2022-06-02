@@ -11,10 +11,14 @@ struct Account: Identifiable {
     let id = UUID().uuidString
     let name: String
     let iconName: String
-    let openingBalance: Double = 0.0
+    var balance: Double = 0.0
     
-    init(){
-        name = "myAccount"
-        iconName = "wallet"
+    init(name: String, iconName: String, balance: Double){
+        self.name = name
+        self.iconName = iconName
+        self.balance = balance
+        
     }
+    
+    
 }

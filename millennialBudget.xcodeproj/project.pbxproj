@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8757C89F283EAC5B00CB4711 /* AccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C89E283EAC5B00CB4711 /* AccountVM.swift */; };
-		8757C8A1283EB2D400CB4711 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C8A0283EB2D400CB4711 /* Accounts.swift */; };
+		8757C89F283EAC5B00CB4711 /* AccountsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C89E283EAC5B00CB4711 /* AccountsVM.swift */; };
+		8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C8A0283EB2D400CB4711 /* AccountsView.swift */; };
 		8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8757C8A3283EBAB600CB4711 /* SymbolPicker */; };
 		C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */; };
 		C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */; };
 		C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B2283CC6F8001EE8C3 /* AccountModel.swift */; };
 		C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */; };
+		C15F28E428401E0D00F07122 /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F28E328401E0D00F07122 /* AccountRow.swift */; };
 		C1ADDB2B28105FBC00A16096 /* millennialBudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */; };
 		C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADDB2C28105FBC00A16096 /* ContentView.swift */; };
 		C1ADDB2F28105FBE00A16096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADDB2E28105FBE00A16096 /* Assets.xcassets */; };
@@ -21,12 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8757C89E283EAC5B00CB4711 /* AccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVM.swift; sourceTree = "<group>"; };
-		8757C8A0283EB2D400CB4711 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		8757C89E283EAC5B00CB4711 /* AccountsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVM.swift; sourceTree = "<group>"; };
+		8757C8A0283EB2D400CB4711 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
 		C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
 		C10996B2283CC6F8001EE8C3 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		C15F28E328401E0D00F07122 /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
 		C1ADDB2728105FBC00A16096 /* millennialBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = millennialBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = millennialBudgetApp.swift; sourceTree = "<group>"; };
 		C1ADDB2C28105FBC00A16096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8757C8A0283EB2D400CB4711 /* Accounts.swift */,
+				8757C8A0283EB2D400CB4711 /* AccountsView.swift */,
+				C15F28E328401E0D00F07122 /* AccountRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -68,16 +71,9 @@
 		C10996B7283CCB9B001EE8C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				8757C89E283EAC5B00CB4711 /* AccountVM.swift */,
+				8757C89E283EAC5B00CB4711 /* AccountsVM.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		C10996B8283CCBB1001EE8C3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C1ADDB1E28105FBB00A16096 = {
@@ -101,7 +97,6 @@
 			children = (
 				C10996AD283CC68C001EE8C3 /* Models */,
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
-				C10996B8283CCBB1001EE8C3 /* Controllers */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
 				C1ADDB2C28105FBC00A16096 /* ContentView.swift */,
 				C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */,
@@ -196,13 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */,
-				8757C8A1283EB2D400CB4711 /* Accounts.swift in Sources */,
+				8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */,
 				C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */,
 				C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */,
 				C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */,
 				C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */,
+				C15F28E428401E0D00F07122 /* AccountRow.swift in Sources */,
 				C1ADDB2B28105FBC00A16096 /* millennialBudgetApp.swift in Sources */,
-				8757C89F283EAC5B00CB4711 /* AccountVM.swift in Sources */,
+				8757C89F283EAC5B00CB4711 /* AccountsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

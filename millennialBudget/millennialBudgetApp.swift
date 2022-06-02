@@ -11,7 +11,7 @@ import SwiftUI
 struct millennialBudgetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountsView(viewModel: AccountsVM.createAccountsVMWithDummyData())
         }
     }
 }
