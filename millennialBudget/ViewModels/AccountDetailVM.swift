@@ -15,9 +15,12 @@ final class AccountDetailVM: ObservableObject  {
     }
     
     func getTransactionsByDate() -> [Transaction] {
+        var transactions = [Transaction]()
+        transactions.append(contentsOf: account.incomes)
+        transactions.append(contentsOf: account.expenses)
+        let sortedTrans = transactions.sorted {$0.date > $1.date }
         
+        return sortedTrans
+    
     }
-    
-    
-    
 }
