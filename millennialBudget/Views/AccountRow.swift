@@ -15,9 +15,16 @@ struct AccountRow: View {
         HStack {
             Image(systemName: account.iconName)
                 .resizable()
-                .frame(width: 40, height: 40)
-            Text(account.name)
-                .font(.system(.title, design: .rounded))
+                .frame(width: 50, height: 50)
+            VStack(alignment: .leading, spacing: 5) {
+                let formatedBalance = NumberFormatter.localizedString(from: NSNumber(value: account.balance), number: .currency)
+                Text(account.name)
+                    .font(.system(size: 22, weight: .bold, design: .monospaced))
+                Text(formatedBalance)
+                    .font(.system(.body, design: .rounded))
+                
+            }.padding(.leading, 10)
+            
             Spacer()
             
         }
@@ -26,6 +33,6 @@ struct AccountRow: View {
 
 struct AccountRow_Previews: PreviewProvider {
     static var previews: some View {
-        AccountRow(account: Account(name: "Wallet", iconName: "wallet.pass", balance: 430.00))
+        AccountRow(account: Account(name: "Inversiones", iconName: "wallet.pass", balance: 1430.00))
     }
 }
