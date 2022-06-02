@@ -8,10 +8,10 @@
 import Foundation
 
 struct Expense: Identifiable, Transaction {
-    
     let id = UUID().uuidString
-    let account: Account
-    let ammount: Double
-    let description: String
-    let date: Date
+    var account: Account
+    var ammount: Double
+    var description: String
+    var date: Date
+    var category: Category
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Account: Identifiable, Transaction {
+struct Account: Identifiable {
     let id = UUID().uuidString
     let name: String
     let iconName: String
