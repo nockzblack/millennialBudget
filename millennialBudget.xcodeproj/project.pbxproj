@@ -62,8 +62,7 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8757C8A0283EB2D400CB4711 /* AccountsView.swift */,
-				C15F28E328401E0D00F07122 /* AccountRow.swift */,
+				C15F28E528491DC200F07122 /* Accounts */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -74,6 +73,15 @@
 				8757C89E283EAC5B00CB4711 /* AccountsVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C15F28E528491DC200F07122 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				8757C8A0283EB2D400CB4711 /* AccountsView.swift */,
+				C15F28E328401E0D00F07122 /* AccountRow.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 		C1ADDB1E28105FBB00A16096 = {

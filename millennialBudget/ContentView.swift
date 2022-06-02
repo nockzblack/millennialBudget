@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var accountsViewModel: AccountsVM
+    
     var body: some View {
         TabView {
-            Text("Accounts")
+            AccountsView(viewModel: accountsViewModel)
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "creditcard")
@@ -36,6 +39,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(accountsViewModel: AccountsVM.createAccountsVMWithDummyData())
     }
 }

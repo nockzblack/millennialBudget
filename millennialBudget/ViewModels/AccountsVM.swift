@@ -31,6 +31,7 @@ final class AccountsVM: ObservableObject  {
         accounts.createAccount(account: Account(name: "Wallet", iconName: "wallet.pass", balance: 200.50))
         accounts.createAccount(account: Account(name: "Trading", iconName: "arrow.up.arrow.down.circle", balance: 12002.10))
         accounts.createAccount(account: Account(name: "Investment", iconName: "arrow.up.circle", balance: 50678.21))
+        accounts.createAccount(account: Account(name: "Gift", iconName: "beats.headphones", balance: 678.21))
         
         
         return accounts
