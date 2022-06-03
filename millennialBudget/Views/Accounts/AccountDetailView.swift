@@ -13,17 +13,22 @@ struct AccountDetailView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                    Text("Acount: ")
+            
+            Text("Acount: ")
+            
+            List {
+                Section(header: Text("Last Transactions")) {
+                    ForEach(viewModel.getTransactionsByDate()) { trans in
+                        AccountDetailRow(trans: trans)
+                    }
+                }
             }
+            .listStyle(.plain)
             
-            Text("Transactions")
             
+        
             
-            List(viewModel.getTransactionsByDate()) { trans in
-                AccountDetailRow(trans: trans)
-            }
-            
+        
         }
     }
 }

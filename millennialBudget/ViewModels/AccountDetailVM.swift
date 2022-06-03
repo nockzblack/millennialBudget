@@ -29,7 +29,7 @@ final class AccountDetailVM: ObservableObject  {
         var acc = AccountsVM.createAccountsVMWithDummyData().accounts[0]
         
         acc.expenses.append(Transaction(isIncome: false, ammount: 400.50, desc: "Tacos Don Miguelon", date: Date(), category: ExpenseCategories[3]))
-        acc.incomes.append(Transaction(isIncome: true, ammount: 80900, desc: "Sueldo Mensual", date: Date(), category: IncomeCategoris[0]))
+        acc.incomes.append(Transaction(isIncome: true, ammount: 80900, desc: "Sueldo Mensual", date: Date(), category: IncomeCategories[0]))
         
         let accDetailVM = AccountDetailVM(acount: acc)
         

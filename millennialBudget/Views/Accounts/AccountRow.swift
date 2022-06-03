@@ -19,7 +19,7 @@ struct AccountRow: View {
             VStack(alignment: .leading, spacing: 5) {
                 let formatedBalance = NumberFormatter.localizedString(from: NSNumber(value: account.balance), number: .currency)
                 Text(account.name)
-                    .font(.system(size: 22, weight: .bold, design: .monospaced))
+                    .font(.system(size: 20, weight: .bold, design: .monospaced))
                 Text(formatedBalance)
                     .font(.system(size: 15, weight:.bold, design: .rounded))
                     .foregroundColor(.blue)

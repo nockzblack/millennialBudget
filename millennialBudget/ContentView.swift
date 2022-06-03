@@ -20,7 +20,7 @@ struct ContentView: View {
                     Text("Accounts")
                 }
             
-            Text("Income")
+            AccountDetailView(viewModel: AccountDetailVM.createAccountDetailVMWithDummyData())
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "dollarsign.circle")
