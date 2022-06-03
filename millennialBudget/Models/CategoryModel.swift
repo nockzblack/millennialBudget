@@ -15,8 +15,8 @@ struct Category: Identifiable {
 }
 
 
-let ExpenseCategories = [Category(name:"Renta", iconName:"House"), Category(name:"Internet", iconName:"Wifi"),
+let ExpenseCategories = [Category(name:"Renta", iconName:"house"), Category(name:"Internet", iconName:"Wifi"),
                          Category(name:"TakeOut", iconName:"Motorbike"), Category(name:"Restaurant", iconName:"Forks")]
 
 
-let IncomeCategoris = [ Category(name:"Sueldo", iconName:"Check"), Category(name:"Dividendos", iconName:"DollarSing"), Category(name:"Salario", iconName:"Cash")]
+let IncomeCategoris = [Category(name:"Sueldo", iconName:"rectangle.badge.checkmark"), Category(name:"Dividendos", iconName:"dollarsign.circle.fill"), Category(name:"Salario", iconName:"banknote")]

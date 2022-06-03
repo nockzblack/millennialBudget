@@ -21,13 +21,14 @@ struct AccountRow: View {
                 Text(account.name)
                     .font(.system(size: 22, weight: .bold, design: .monospaced))
                 Text(formatedBalance)
-                    .font(.system(.body, design: .rounded))
+                    .font(.system(size: 15, weight:.bold, design: .rounded))
+                    .foregroundColor(.blue)
                 
             }.padding(.leading, 10)
             
             Spacer()
             
-        }
+        }.padding(5)
     }
 }
 

@@ -9,18 +9,27 @@ import SwiftUI
 
 struct AccountDetailView: View {
     
+    @ObservedObject var viewModel: AccountDetailVM
     
     var body: some View {
         VStack {
-            Text("Incomes")
+            HStack {
+                    Text("Acount: ")
+            }
             
-            Text("Expenses")
+            Text("Transactions")
+            
+            
+            List(viewModel.getTransactionsByDate()) { trans in
+                AccountDetailRow(trans: trans)
+            }
+            
         }
     }
 }
 
 struct AccountDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountDetailView()
+        AccountDetailView(viewModel: AccountDetailVM.createAccountDetailVMWithDummyData())
     }
 }

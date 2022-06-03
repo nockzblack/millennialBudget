@@ -10,14 +10,13 @@
 		8757C89F283EAC5B00CB4711 /* AccountsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C89E283EAC5B00CB4711 /* AccountsVM.swift */; };
 		8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C8A0283EB2D400CB4711 /* AccountsView.swift */; };
 		8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8757C8A3283EBAB600CB4711 /* SymbolPicker */; };
-		C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */; };
-		C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */; };
 		C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B2283CC6F8001EE8C3 /* AccountModel.swift */; };
 		C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */; };
+		C12173F928493A5500D3609B /* AccountDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12173F828493A5500D3609B /* AccountDetailRow.swift */; };
+		C12173FB2849868000D3609B /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12173FA2849868000D3609B /* TransactionModel.swift */; };
 		C15F28E428401E0D00F07122 /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F28E328401E0D00F07122 /* AccountRow.swift */; };
 		C15F28E9284922BB00F07122 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F28E8284922BB00F07122 /* AccountDetailView.swift */; };
 		C15F28EB284923C000F07122 /* AccountDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F28EA284923C000F07122 /* AccountDetailVM.swift */; };
-		C15F28EE2849247F00F07122 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15F28ED2849247F00F07122 /* TransactionProtocol.swift */; };
 		C1ADDB2B28105FBC00A16096 /* millennialBudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */; };
 		C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADDB2C28105FBC00A16096 /* ContentView.swift */; };
 		C1ADDB2F28105FBE00A16096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADDB2E28105FBE00A16096 /* Assets.xcassets */; };
@@ -27,14 +26,13 @@
 /* Begin PBXFileReference section */
 		8757C89E283EAC5B00CB4711 /* AccountsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVM.swift; sourceTree = "<group>"; };
 		8757C8A0283EB2D400CB4711 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
-		C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
-		C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
 		C10996B2283CC6F8001EE8C3 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		C12173F828493A5500D3609B /* AccountDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailRow.swift; sourceTree = "<group>"; };
+		C12173FA2849868000D3609B /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C15F28E328401E0D00F07122 /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
 		C15F28E8284922BB00F07122 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		C15F28EA284923C000F07122 /* AccountDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailVM.swift; sourceTree = "<group>"; };
-		C15F28ED2849247F00F07122 /* TransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProtocol.swift; sourceTree = "<group>"; };
 		C1ADDB2728105FBC00A16096 /* millennialBudget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = millennialBudget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = millennialBudgetApp.swift; sourceTree = "<group>"; };
 		C1ADDB2C28105FBC00A16096 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,10 +55,9 @@
 		C10996AD283CC68C001EE8C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C10996AE283CC6A9001EE8C3 /* ExpenseModel.swift */,
-				C10996B0283CC6B7001EE8C3 /* IncomeModel.swift */,
 				C10996B2283CC6F8001EE8C3 /* AccountModel.swift */,
 				C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */,
+				C12173FA2849868000D3609B /* TransactionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,6 +85,7 @@
 				8757C8A0283EB2D400CB4711 /* AccountsView.swift */,
 				C15F28E328401E0D00F07122 /* AccountRow.swift */,
 				C15F28E8284922BB00F07122 /* AccountDetailView.swift */,
+				C12173F828493A5500D3609B /* AccountDetailRow.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -95,7 +93,6 @@
 		C15F28EC2849246D00F07122 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				C15F28ED2849247F00F07122 /* TransactionProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -215,13 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15F28EE2849247F00F07122 /* TransactionProtocol.swift in Sources */,
+				C12173F928493A5500D3609B /* AccountDetailRow.swift in Sources */,
 				C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */,
 				8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */,
+				C12173FB2849868000D3609B /* TransactionModel.swift in Sources */,
 				C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */,
 				C15F28E9284922BB00F07122 /* AccountDetailView.swift in Sources */,
-				C10996B1283CC6B7001EE8C3 /* IncomeModel.swift in Sources */,
-				C10996AF283CC6A9001EE8C3 /* ExpenseModel.swift in Sources */,
 				C15F28EB284923C000F07122 /* AccountDetailVM.swift in Sources */,
 				C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */,
 				C15F28E428401E0D00F07122 /* AccountRow.swift in Sources */,
