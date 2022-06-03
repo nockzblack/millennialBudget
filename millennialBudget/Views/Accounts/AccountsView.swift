@@ -10,12 +10,27 @@ import SwiftUI
 struct AccountsView: View {
     
     @ObservedObject var viewModel: AccountsVM
-
+    
     var body: some View {
-            List(viewModel.accounts) { acc in
-                AccountRow(account: acc)
+            NavigationView {
+                    List(viewModel.accounts) { acc in
+                        NavigationLink {
+                            AccountDetailView(viewModel: AccountDetailVM(acount:acc))
+                        } label: {
+                            AccountRow(account: acc)
+                        }
+                    }.listStyle(.inset)
+                    .toolbar {
+                        Button {
+                            print("+")
+                        } label: {
+                            Image(systemName: "plus").imageScale(.large)
+                        }
+
+                    }
             }
     }
+    
 }
 
 struct Accounts_Previews: PreviewProvider {

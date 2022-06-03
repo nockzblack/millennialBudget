@@ -12,9 +12,13 @@ struct AccountDetailView: View {
     @ObservedObject var viewModel: AccountDetailVM
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center, spacing: 10) {
             
-            Text("Acount: ")
+            HStack {
+                Text(viewModel.account.name)
+                    .font(.system(size: 30, weight: .bold, design: .default))
+            }
+            
             
             List {
                 Section(header: Text("Last Transactions")) {
@@ -24,10 +28,13 @@ struct AccountDetailView: View {
                 }
             }
             .listStyle(.plain)
-            
-            
-        
-            
+            .toolbar {
+                Button {
+                    print("+")
+                } label: {
+                    Image(systemName: "plus").imageScale(.large)
+                }
+            }
         
         }
     }

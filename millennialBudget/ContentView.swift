@@ -14,18 +14,27 @@ struct ContentView: View {
     var body: some View {
         TabView {
             AccountsView(viewModel: accountsViewModel)
-                .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "creditcard")
                     Text("Accounts")
                 }
             
+            /*
             AccountDetailView(viewModel: AccountDetailVM.createAccountDetailVMWithDummyData())
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "dollarsign.circle")
                     Text("Accounts")
                 }
+             */
+            
+            Text("Expense")
+                .font( .system(size: 30, weight: .bold, design: .rounded))
+                .tabItem {
+                    Image(systemName: "bag.badge.plus")
+                    Text("")
+                }
+            
             Text("Expense")
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
