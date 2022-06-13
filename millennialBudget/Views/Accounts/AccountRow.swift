@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccountRow: View {
     
-    var account: Account
+    var account: AccountModel
     
     var body: some View {
         HStack {
@@ -34,6 +34,6 @@ struct AccountRow: View {
 
 struct AccountRow_Previews: PreviewProvider {
     static var previews: some View {
-        AccountRow(account: Account(name: "Inversiones", iconName: "wallet.pass", balance: 1430.00))
+        AccountRow(account: AccountModel(name: "Inversiones", iconName: "wallet.pass", balance: 1430.00))
     }
 }

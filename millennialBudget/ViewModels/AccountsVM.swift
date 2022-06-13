@@ -2,17 +2,17 @@
 import Foundation
 
 final class AccountsVM: ObservableObject  {
-    var accounts: [Account]
+    var accounts: [AccountModel]
     
     init(){
         accounts = []
     }
     
-    func createAccount(account: Account){
+    func addAccount(account: AccountModel){
         accounts.append(account)
     }
     
-    func getAccountsByName(name: String) -> Account?{
+    func getAccountsByName(name: String) -> AccountModel?{
         if let account = accounts.first(where: {$0.name == name}) {
            return account
         } else {
@@ -21,20 +21,24 @@ final class AccountsVM: ObservableObject  {
     }
     
     func createAccount(){
-        accounts.append(Account(name: "Dummy", iconName: "questionmark.circle", balance: 0.0))
+        accounts.append(AccountModel(name: "NewAccount", iconName: "questionmark.circle", balance: 0.0))
     }
     
     
     static func createAccountsVMWithDummyData() -> AccountsVM {
-        let accounts = AccountsVM()
+        let accVM = AccountsVM()
         
-        accounts.createAccount(account: Account(name: "Wallet", iconName: "wallet.pass", balance: 200.50))
-        accounts.createAccount(account: Account(name: "Trading", iconName: "arrow.up.arrow.down.circle", balance: 12002.10))
-        accounts.createAccount(account: Account(name: "Investment", iconName: "arrow.up.circle", balance: 50678.21))
-        accounts.createAccount(account: Account(name: "Gift", iconName: "beats.headphones", balance: 678.21))
+        var acc = AccountModel(name: "Wallet", iconName: "wallet.pass", balance: 200.50)
+        acc.expenses.append(Transaction(isIncome: false, ammount: 400.50, desc: "Tacos Don Miguelon", date: Date(), category: ExpenseCategories[3]))
+        acc.incomes.append(Transaction(isIncome: true, ammount: 80900, desc: "Sueldo Mensual", date: Date(), category: IncomeCategories[0]))
+        accVM.addAccount(account: acc)
+        
+        accVM.addAccount(account: AccountModel(name: "Trading", iconName: "arrow.up.arrow.down.circle", balance: 12002.10))
+        accVM.addAccount(account: AccountModel(name: "Investment", iconName: "arrow.up.circle", balance: 50678.21))
+        accVM.addAccount(account: AccountModel(name: "Gift", iconName: "beats.headphones", balance: 678.21))
         
         
-        return accounts
+        return accVM
     }
     
 }

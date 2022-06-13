@@ -8,9 +8,9 @@
 import Foundation
 
 final class AccountDetailVM: ObservableObject  {
-    var account: Account
+    var account: AccountModel
     
-    init(acount: Account){
+    init(acount: AccountModel){
         self.account = acount
     }
     
@@ -22,19 +22,5 @@ final class AccountDetailVM: ObservableObject  {
         
         return sortedTrans
     
-    }
-    
-    static func createAccountDetailVMWithDummyData() -> AccountDetailVM {
-        
-        var acc = AccountsVM.createAccountsVMWithDummyData().accounts[0]
-        
-        acc.expenses.append(Transaction(isIncome: false, ammount: 400.50, desc: "Tacos Don Miguelon", date: Date(), category: ExpenseCategories[3]))
-        acc.incomes.append(Transaction(isIncome: true, ammount: 80900, desc: "Sueldo Mensual", date: Date(), category: IncomeCategories[0]))
-        
-        let accDetailVM = AccountDetailVM(acount: acc)
-        
-        return accDetailVM
-        
-
     }
 }

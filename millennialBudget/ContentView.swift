@@ -20,27 +20,22 @@ struct ContentView: View {
                 }
             
             /*
-            AccountDetailView(viewModel: AccountDetailVM.createAccountDetailVMWithDummyData())
+            AccountDetailView(viewModel: AccountDetailVM.)
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "dollarsign.circle")
                     Text("Accounts")
                 }
              */
+             
             
-            Text("Expense")
+            Text("Budgets")
                 .font( .system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
                     Image(systemName: "bag.badge.plus")
                     Text("")
                 }
             
-            Text("Expense")
-                .font( .system(size: 30, weight: .bold, design: .rounded))
-                .tabItem {
-                    Image(systemName: "bag.badge.plus")
-                    Text("")
-                }
         }
         .accentColor(.blue)
     }

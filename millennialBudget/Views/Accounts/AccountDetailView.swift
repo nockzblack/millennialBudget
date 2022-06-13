@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountDetailView: View {
     
     @ObservedObject var viewModel: AccountDetailVM
+    @State var showTransactionView = false
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
@@ -30,18 +31,23 @@ struct AccountDetailView: View {
             .listStyle(.plain)
             .toolbar {
                 Button {
-                    print("+")
+                    showTransactionView.toggle()
                 } label: {
                     Image(systemName: "plus").imageScale(.large)
                 }
             }
         
         }
+        .sheet(isPresented: $showTransactionView) {
+            TransactionView()
+        }
     }
 }
 
+
 struct AccountDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountDetailView(viewModel: AccountDetailVM.createAccountDetailVMWithDummyData())
+        AccountDetailView(viewModel: AccountDetailVM(acount: AccountModel.createDummyAccount()))
     }
 }
+ 
