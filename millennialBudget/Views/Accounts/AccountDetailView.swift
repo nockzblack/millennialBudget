@@ -11,6 +11,16 @@ struct AccountDetailView: View {
     
     @ObservedObject var viewModel: AccountDetailVM
     @State var showTransactionView = false
+    @State var result:Transaction?
+    
+    
+    func updateTransactions() {
+        if let trans = result {
+            viewModel.addTransaction(trans: trans)
+            result = nil
+            viewModel.getTransactionsByDate()
+        }   
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
@@ -23,7 +33,7 @@ struct AccountDetailView: View {
             
             List {
                 Section(header: Text("Last Transactions")) {
-                    ForEach(viewModel.getTransactionsByDate()) { trans in
+                    ForEach(viewModel.transactions ?? [Transaction]()) { trans in
                         AccountDetailRow(trans: trans)
                     }
                 }
@@ -39,7 +49,9 @@ struct AccountDetailView: View {
         
         }
         .sheet(isPresented: $showTransactionView) {
-            TransactionView()
+            updateTransactions()
+        } content: {
+            TransactionView(acountName: viewModel.account.name, transaction: $result)
         }
     }
 }
