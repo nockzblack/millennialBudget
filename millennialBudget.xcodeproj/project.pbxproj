@@ -22,6 +22,11 @@
 		C1ADDB2F28105FBE00A16096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADDB2E28105FBE00A16096 /* Assets.xcassets */; };
 		C1ADDB3228105FBE00A16096 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADDB3128105FBE00A16096 /* Preview Assets.xcassets */; };
 		C1B815642857B52500765AEE /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B815632857B52500765AEE /* TransactionView.swift */; };
+		C1B8156B28590F7900765AEE /* CreateBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8156A28590F7900765AEE /* CreateBudgetView.swift */; };
+		C1B8156D2859103900765AEE /* CategoryBudgetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8156C2859103900765AEE /* CategoryBudgetRow.swift */; };
+		C1B8156F285913DB00765AEE /* BudgetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B8156E285913DB00765AEE /* BudgetVM.swift */; };
+		C1B815712859142200765AEE /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B815702859142200765AEE /* Budget.swift */; };
+		C1B815732859147000765AEE /* BudgetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B815722859147000765AEE /* BudgetCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		C1ADDB2E28105FBE00A16096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1ADDB3128105FBE00A16096 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1B815632857B52500765AEE /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		C1B8156A28590F7900765AEE /* CreateBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBudgetView.swift; sourceTree = "<group>"; };
+		C1B8156C2859103900765AEE /* CategoryBudgetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBudgetRow.swift; sourceTree = "<group>"; };
+		C1B8156E285913DB00765AEE /* BudgetVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetVM.swift; sourceTree = "<group>"; };
+		C1B815702859142200765AEE /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		C1B815722859147000765AEE /* BudgetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 				C10996B2283CC6F8001EE8C3 /* AccountModel.swift */,
 				C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */,
 				C12173FA2849868000D3609B /* TransactionModel.swift */,
+				C1B815702859142200765AEE /* Budget.swift */,
+				C1B815722859147000765AEE /* BudgetCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -67,6 +79,7 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C1B8156928590F6600765AEE /* Budget */,
 				C1B8156628590E1F00765AEE /* AccountDetail */,
 				C1B8156528590E0B00765AEE /* Transaction */,
 				C15F28E528491DC200F07122 /* Accounts */,
@@ -79,6 +92,7 @@
 			children = (
 				8757C89E283EAC5B00CB4711 /* AccountsVM.swift */,
 				C15F28EA284923C000F07122 /* AccountDetailVM.swift */,
+				C1B8156E285913DB00765AEE /* BudgetVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,6 +177,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		C1B8156928590F6600765AEE /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				C1B8156A28590F7900765AEE /* CreateBudgetView.swift */,
+				C1B8156C2859103900765AEE /* CategoryBudgetRow.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,7 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B8156B28590F7900765AEE /* CreateBudgetView.swift in Sources */,
 				C12173F928493A5500D3609B /* AccountDetailRow.swift in Sources */,
+				C1B815712859142200765AEE /* Budget.swift in Sources */,
+				C1B8156F285913DB00765AEE /* BudgetVM.swift in Sources */,
 				C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */,
 				8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */,
 				C12173FB2849868000D3609B /* TransactionModel.swift in Sources */,
@@ -247,6 +273,8 @@
 				C1B815642857B52500765AEE /* TransactionView.swift in Sources */,
 				C15F28E9284922BB00F07122 /* AccountDetailView.swift in Sources */,
 				C15F28EB284923C000F07122 /* AccountDetailVM.swift in Sources */,
+				C1B815732859147000765AEE /* BudgetCategory.swift in Sources */,
+				C1B8156D2859103900765AEE /* CategoryBudgetRow.swift in Sources */,
 				C1ADDB2D28105FBC00A16096 /* ContentView.swift in Sources */,
 				C15F28E428401E0D00F07122 /* AccountRow.swift in Sources */,
 				C1ADDB2B28105FBC00A16096 /* millennialBudgetApp.swift in Sources */,
