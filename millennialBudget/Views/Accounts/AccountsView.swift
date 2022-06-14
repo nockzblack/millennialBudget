@@ -27,7 +27,7 @@ struct AccountsView: View {
                             Image(systemName: "plus").imageScale(.large)
                         }
 
-                    }
+                    }.navigationTitle(Text("Accounts"))
             }
     }
     

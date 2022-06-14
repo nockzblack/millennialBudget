@@ -53,9 +53,7 @@ struct TransactionView: View {
                     .padding(.top)
                 }
                 
-                Toggle("Expense / Income", isOn: $isIncome)
-                    .font(.system(size: 12, weight: .semibold, design: .default))
-                    .padding()
+               
                     
                 
                 if (isIncome) {
@@ -65,6 +63,8 @@ struct TransactionView: View {
                 }
                 
                 Form {
+                    Toggle("Expense / Income", isOn: $isIncome)
+                        .font(.system(size: 18, weight: .semibold, design: .default))
                     Text("Account: \(acountName)")
                     TextField("0.00", text: $amount)
                         .keyboardType(.decimalPad)

@@ -23,14 +23,7 @@ struct AccountDetailView: View {
     }
     
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            
-            HStack {
-                Text(viewModel.account.name)
-                    .font(.system(size: 30, weight: .bold, design: .default))
-            }
-            
-            
+        VStack{
             List {
                 Section(header: Text("Last Transactions")) {
                     ForEach(viewModel.transactions ?? [Transaction]()) { trans in
@@ -46,6 +39,7 @@ struct AccountDetailView: View {
                     Image(systemName: "plus").imageScale(.large)
                 }
             }
+            .navigationTitle(viewModel.account.name)
         
         }
         .sheet(isPresented: $showTransactionView) {

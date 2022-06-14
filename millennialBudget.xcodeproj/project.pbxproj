@@ -79,6 +79,7 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C1B8156828590F1500765AEE /* App */,
 				C1B8156928590F6600765AEE /* Budget */,
 				C1B8156628590E1F00765AEE /* AccountDetail */,
 				C1B8156528590E0B00765AEE /* Transaction */,
@@ -128,7 +129,6 @@
 				C10996AD283CC68C001EE8C3 /* Models */,
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
-				C1B8156828590F1500765AEE /* App */,
 				C1B8156728590EE600765AEE /* Assets */,
 			);
 			path = millennialBudget;
@@ -408,7 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"millennialBudget/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"millennialBudget/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4FT83F7673;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -437,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"millennialBudget/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"millennialBudget/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4FT83F7673;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
