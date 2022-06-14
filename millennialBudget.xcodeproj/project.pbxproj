@@ -114,10 +114,8 @@
 				C10996AD283CC68C001EE8C3 /* Models */,
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
-				C1ADDB2C28105FBC00A16096 /* ContentView.swift */,
-				C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */,
-				C1ADDB2E28105FBE00A16096 /* Assets.xcassets */,
-				C1ADDB3028105FBE00A16096 /* Preview Content */,
+				C1B8156828590F1500765AEE /* App */,
+				C1B8156728590EE600765AEE /* Assets */,
 			);
 			path = millennialBudget;
 			sourceTree = "<group>";
@@ -145,6 +143,24 @@
 				C12173F828493A5500D3609B /* AccountDetailRow.swift */,
 			);
 			path = AccountDetail;
+			sourceTree = "<group>";
+		};
+		C1B8156728590EE600765AEE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C1ADDB2E28105FBE00A16096 /* Assets.xcassets */,
+				C1ADDB3028105FBE00A16096 /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C1B8156828590F1500765AEE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1ADDB2C28105FBC00A16096 /* ContentView.swift */,
+				C1ADDB2A28105FBC00A16096 /* millennialBudgetApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
