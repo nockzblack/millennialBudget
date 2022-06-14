@@ -67,6 +67,8 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C1B8156628590E1F00765AEE /* AccountDetail */,
+				C1B8156528590E0B00765AEE /* Transaction */,
 				C15F28E528491DC200F07122 /* Accounts */,
 			);
 			path = Views;
@@ -86,18 +88,8 @@
 			children = (
 				8757C8A0283EB2D400CB4711 /* AccountsView.swift */,
 				C15F28E328401E0D00F07122 /* AccountRow.swift */,
-				C15F28E8284922BB00F07122 /* AccountDetailView.swift */,
-				C12173F828493A5500D3609B /* AccountDetailRow.swift */,
-				C1B815632857B52500765AEE /* TransactionView.swift */,
 			);
 			path = Accounts;
-			sourceTree = "<group>";
-		};
-		C15F28EC2849246D00F07122 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		C1ADDB1E28105FBB00A16096 = {
@@ -119,7 +111,6 @@
 		C1ADDB2928105FBC00A16096 /* millennialBudget */ = {
 			isa = PBXGroup;
 			children = (
-				C15F28EC2849246D00F07122 /* Protocols */,
 				C10996AD283CC68C001EE8C3 /* Models */,
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
@@ -137,6 +128,23 @@
 				C1ADDB3128105FBE00A16096 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1B8156528590E0B00765AEE /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				C1B815632857B52500765AEE /* TransactionView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		C1B8156628590E1F00765AEE /* AccountDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C15F28E8284922BB00F07122 /* AccountDetailView.swift */,
+				C12173F828493A5500D3609B /* AccountDetailRow.swift */,
+			);
+			path = AccountDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
