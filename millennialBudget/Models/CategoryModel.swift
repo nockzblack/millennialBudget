@@ -15,8 +15,32 @@ struct Category: Identifiable {
 }
 
 
-let ExpenseCategories = [Category(name:"Renta", iconName:"house"), Category(name:"Internet", iconName:"Wifi"),
-                         Category(name:"TakeOut", iconName:"Motorbike"), Category(name:"Restaurant", iconName:"fork.knife.circle.fill")]
+// MARK: DEFAULT CATEGORIES
+
+// MARK: 10 Default Expenses
+var ExpenseCategories = [
+    Category(name:"Vivienda", iconName:"house"),
+    Category(name:"Despensa", iconName:"cart.circle.fill"),
+    Category(name:"Restaurantes", iconName:"fork.knife.circle.fill"),
+    Category(name:"Transporte", iconName:"car.circle"),
+    Category(name:"Vestimenta", iconName:"tshirt"),
+    Category(name:"Entretenimiento", iconName:"logo.playstation"),
+    Category(name:"Médicos", iconName:"staroflife.fill"),
+    Category(name:"Deporte", iconName:"logo.playstation"),
+    Category(name:"Vacaciones", iconName:"globe.americas"),
+    Category(name:"Educación", iconName:"books.vertical.circle.fill")]
 
 
-let IncomeCategories = [Category(name:"Sueldo", iconName:"rectangle.badge.checkmark"), Category(name:"Dividendos", iconName:"dollarsign.circle.fill"), Category(name:"Salario", iconName:"banknote")]
+// MARK: Expenses
+
+// MARK: Default Incomes
+
+let IncomeCategories = [
+    Category(name:"Sueldo", iconName:"dollarsign.circle.fill"),
+    Category(name:"Intereses", iconName:"banknote"),
+    Category(name:"Dividendos", iconName:"bitcoinsign.circle.fill"),
+    Category(name:"Regalo", iconName:"giftcard.fill"),
+    Category(name:"Salario", iconName:"laptopcomputer"),
+    Category(name:"Alquiler", iconName:"building.fill"),
+    Category(name:"Ventas", iconName:"bag.fill.badge.plus"),
+    Category(name:"Bonificaciones", iconName:"plus.circle")]
