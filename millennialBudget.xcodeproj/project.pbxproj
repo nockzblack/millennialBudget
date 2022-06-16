@@ -10,6 +10,9 @@
 		8757C89F283EAC5B00CB4711 /* AccountsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C89E283EAC5B00CB4711 /* AccountsVM.swift */; };
 		8757C8A1283EB2D400CB4711 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757C8A0283EB2D400CB4711 /* AccountsView.swift */; };
 		8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8757C8A3283EBAB600CB4711 /* SymbolPicker */; };
+		B4DACBF2285AA32800BD3712 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DACBF1285AA32800BD3712 /* SignInView.swift */; };
+		B4DACBF7285AAB4000BD3712 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B4DACBF6285AAB4000BD3712 /* FirebaseAuth */; };
+		B4DACBF9285AAE1400BD3712 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4DACBF8285AAE1300BD3712 /* GoogleService-Info.plist */; };
 		C10996B3283CC6F8001EE8C3 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B2283CC6F8001EE8C3 /* AccountModel.swift */; };
 		C10996B5283CC8E1001EE8C3 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */; };
 		C12173F928493A5500D3609B /* AccountDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12173F828493A5500D3609B /* AccountDetailRow.swift */; };
@@ -32,6 +35,8 @@
 /* Begin PBXFileReference section */
 		8757C89E283EAC5B00CB4711 /* AccountsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVM.swift; sourceTree = "<group>"; };
 		8757C8A0283EB2D400CB4711 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		B4DACBF1285AA32800BD3712 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B4DACBF8285AAE1300BD3712 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C10996B2283CC6F8001EE8C3 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		C10996B4283CC8E1001EE8C3 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		C12173F828493A5500D3609B /* AccountDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailRow.swift; sourceTree = "<group>"; };
@@ -58,12 +63,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8757C8A4283EBAB600CB4711 /* SymbolPicker in Frameworks */,
+				B4DACBF7285AAB4000BD3712 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4DACBF0285AA30300BD3712 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4DACBF1285AA32800BD3712 /* SignInView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C10996AD283CC68C001EE8C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,7 @@
 		C10996B6283CCB8B001EE8C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4DACBF0285AA30300BD3712 /* Login */,
 				C1B8156828590F1500765AEE /* App */,
 				C1B8156928590F6600765AEE /* Budget */,
 				C1B8156628590E1F00765AEE /* AccountDetail */,
@@ -126,6 +141,7 @@
 		C1ADDB2928105FBC00A16096 /* millennialBudget */ = {
 			isa = PBXGroup;
 			children = (
+				B4DACBF8285AAE1300BD3712 /* GoogleService-Info.plist */,
 				C10996AD283CC68C001EE8C3 /* Models */,
 				C10996B7283CCB9B001EE8C3 /* ViewModels */,
 				C10996B6283CCB8B001EE8C3 /* Views */,
@@ -204,6 +220,7 @@
 			name = millennialBudget;
 			packageProductDependencies = (
 				8757C8A3283EBAB600CB4711 /* SymbolPicker */,
+				B4DACBF6285AAB4000BD3712 /* FirebaseAuth */,
 			);
 			productName = millennialBudget;
 			productReference = C1ADDB2728105FBC00A16096 /* millennialBudget.app */;
@@ -235,6 +252,7 @@
 			mainGroup = C1ADDB1E28105FBB00A16096;
 			packageReferences = (
 				8757C8A2283EBAB600CB4711 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+				B4DACBF5285AAB4000BD3712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C1ADDB2828105FBC00A16096 /* Products */;
 			projectDirPath = "";
@@ -252,6 +270,7 @@
 			files = (
 				C1ADDB3228105FBE00A16096 /* Preview Assets.xcassets in Resources */,
 				C1ADDB2F28105FBE00A16096 /* Assets.xcassets in Resources */,
+				B4DACBF9285AAE1400BD3712 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DACBF2285AA32800BD3712 /* SignInView.swift in Sources */,
 				C1B8156B28590F7900765AEE /* CreateBudgetView.swift in Sources */,
 				C12173F928493A5500D3609B /* AccountDetailRow.swift in Sources */,
 				C1B815712859142200765AEE /* Budget.swift in Sources */,
@@ -491,6 +511,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		B4DACBF5285AAB4000BD3712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -498,6 +526,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8757C8A2283EBAB600CB4711 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
 			productName = SymbolPicker;
+		};
+		B4DACBF6285AAB4000BD3712 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4DACBF5285AAB4000BD3712 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
